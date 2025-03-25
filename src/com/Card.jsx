@@ -1,3 +1,5 @@
+import getImage from "../assets/images/images";
+
 function ToggleActive({ isActive, onClick }) {
   return (
     <div
@@ -21,11 +23,7 @@ function Card({ extension, removeOnclik, toggleAciveStatus }) {
   return (
     <div className="w-full max-w-[400px] min-h-[150px] p-3 flex flex-col dark:bg-neutral-700 bg-neutral-50 rounded-xl">
       <div className="flex items-center">
-        <img
-          src={`/src/assets/images/${logo}`}
-          className="mr-2"
-          alt={"logo of " + name}
-        />
+        <img src={getImage(logo)} className="mr-2" alt={"logo of " + name} />
         <div>
           <h2 className="font-bold text-xl">{name}</h2>
           <p className="text-neutral-400 dark:text-neutral-200 text-sm">
