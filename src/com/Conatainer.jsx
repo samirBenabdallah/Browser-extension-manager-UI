@@ -19,7 +19,7 @@ function Conatainer({ category = "all" }) {
   }
   useEffect(() => {
     (async function () {
-      const res = await axios.get("public/data.json");
+      const res = await axios.get("data.json");
       setExtensions(res.data);
     })();
   }, []);
